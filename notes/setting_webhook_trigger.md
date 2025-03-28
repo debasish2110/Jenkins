@@ -16,6 +16,9 @@ This guide explains how to set up a GitHub webhook for Jenkins to automatically 
    - Under **Build Triggers**, check **GitHub hook trigger for GITScm polling**.
    - Save the configuration.
 
+   ![Jenkins Webhook Configuration](../images/pipeline_configuration_for_jenkins_webhook.png)
+
+
 ## Step 2: Generate Webhook URL
 1. If Jenkins is publicly accessible, use your Jenkins URL:
    ```
@@ -40,6 +43,9 @@ This guide explains how to set up a GitHub webhook for Jenkins to automatically 
 6. Choose **Just the push event**.
 7. Click **Add Webhook**.
 
+    ![GitHub repo WebHook setting](../images/github_repo_webhook_setting.png)
+    ![GitHub repo List of WebHooks](../images/github_webhook.png)
+
 ## Step 4: Test the Webhook
 1. Make a small commit and push it:
    ```sh
@@ -47,6 +53,9 @@ This guide explains how to set up a GitHub webhook for Jenkins to automatically 
    git push origin main
    ```
 2. Check Jenkins to see if the job runs automatically.
+    **console log**
+    ![Jenkins Console log](../images/github_webhook_jenkins_console_log.png)
+
 3. If the webhook does not trigger, check:
    - **GitHub Webhooks → Recent Deliveries** for errors.
    - **Jenkins logs** (`/var/log/jenkins/jenkins.log`).
