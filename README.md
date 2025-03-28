@@ -170,4 +170,3 @@ docker exec -it <container_id> cat /var/jenkins_home/secrets/initialAdminPasswor
 ## **Conclusion**
 Jenkins is a **powerful and flexible CI/CD automation server** widely used in DevOps. It supports **automation, extensibility via plugins, distributed builds, and integration with modern tools** like Docker, Kubernetes, and cloud platforms.
 
-Would you like help setting up Jenkins or writing a Jenkinsfile for a project? 🚀
